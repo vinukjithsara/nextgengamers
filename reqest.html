@@ -5,6 +5,15 @@
   <title>NextGen Gamers</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.mobile-menu');
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 </head>
 <body>
   <div class="navbar">
@@ -57,14 +66,6 @@
     </form>
   </div>
 
-  <script>
-
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.mobile-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  </script>
   </div>
 <footer class="footer">
   <div class="footer-container">

@@ -136,27 +136,32 @@ body {
 @media (max-width: 1100px) {
   .navbar {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 20px 10px 0 10px;
   }
   .logo-main {
     font-size: 2.5rem;
+    scale: 1.2;
+    
   }
   .nav-links a {
     font-size: 1.3rem;
   }
   .search-bar {
-    font-size: 1.1rem;
-    width: 250px;
-    padding: 10px 18px;
-    margin-left: 0;
-    margin-top: 10px;
+    display: none;
+    font-display: none;
   }
   .main-title {
     font-size: 2.2rem;
+    gap: 10px;
   }
   .characters-row {
     height: 35vh;
+    scale: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+
   }
   .character-img {
     max-height: 35vh;
@@ -387,6 +392,9 @@ body {
   display: flex;
 }
 
+.main-content {
+  padding: 40px 20px;
+}
 @media (max-width: 700px) {
   .mobile-menu-toggle {
     display: flex;
